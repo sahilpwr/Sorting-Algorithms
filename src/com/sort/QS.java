@@ -8,10 +8,10 @@ public class QS
 	{
 		System.out.println(high);
 		int pivot=array[high];
-		int i=-1;
+		int i=low-1;
 		for(int j=low;j<high;j++)
 		{
-			if(array[j]<pivot)
+			if(array[j]<=pivot)
 			{
 				i++;
 				int temp=array[j];
@@ -29,10 +29,13 @@ public class QS
 	}
 	public void sort(int[] array,int l,int r)
 	{
+		if(l<r)
+		{
 		int pi=partition(array,l,r);
 		sort(array,l,pi-1);
 		sort(array,pi+1,r);
 		System.out.println(Arrays.toString(array));
+		}
 	}
 	public static void main(String[] args)
 	{
