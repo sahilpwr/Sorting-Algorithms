@@ -6,7 +6,7 @@ public class QS
 {
 	public int partition(int[] array,int low,int high)
 	{
-		System.out.println(high);
+		
 		int pivot=array[high];
 		int i=low-1;
 		for(int j=low;j<high;j++)
@@ -34,8 +34,9 @@ public class QS
 		int pi=partition(array,l,r);
 		sort(array,l,pi-1);
 		sort(array,pi+1,r);
-		System.out.println(Arrays.toString(array));
+		
 		}
+		System.out.println(Arrays.toString(array));
 	}
 	public static void main(String[] args)
 	{
