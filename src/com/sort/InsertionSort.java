@@ -2,7 +2,8 @@ package com.sort;
 
 import java.util.Arrays;
 
-public class InsertionSort {
+public class InsertionSort 
+{
 	public void sort(int[] array)
 	{
 		int len=array.length;
