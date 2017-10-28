@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-public class NewFile {
+public class FileParsing {
 
 	public static void main(String[] args) throws IOException {
 		
