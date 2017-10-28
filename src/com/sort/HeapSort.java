@@ -10,7 +10,7 @@ public class HeapSort
 		int n=array.length;
 		for(int i=n/2-1;i>=0;i--)
 			heapify(array,n,i);
-		for(int i=n-1;i>-0;i--)
+		for(int i=n-1;i>=0;i--)
 		{
 			int temp=array[0];
 			array[0]=array[i];
@@ -26,7 +26,7 @@ public class HeapSort
 		int r=2*i+2;
 		
 	     if(l<n&&array[l]>array[largest])
-	    	 largest=i;
+	    	 largest=l;
 	     if(r<n&&array[r]>array[largest])
 	    	 largest=r;
 	     if(largest!=i)
